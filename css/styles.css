@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: #799ACD;
+  font-family: Roboto;
+}
+
+
+.container {
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 70%;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 2px 3px 5px -1px rgba(65,84,112,1);
+}
+
+.device-container {
+  flex-wrap: wrap;
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.device-container:hover {
+  background-color: #F3F3F3;
+}
+
+img {
+  width: 40%;
+  height: 40%;
+}
+
+h3, .price {
+  font-weight: 700;
+  color: #6286bf;
+  letter-spacing: 2px;
+}
+
+p {
+  line-height: 23px;
+  color: #878787;
+  font-weight: 500;
+}
+
+.price::before{
+  content: "$";
+  font-size: 14px;
+  position: absolute;
+  transform: translateY(-5px) translateX(-11px);
+
+}
+
+.price::after{
+  content: "/month";
+  font-size: 14px;
+}
+
+.price {
+  font-size: 30px;
+}
